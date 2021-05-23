@@ -1,5 +1,5 @@
-#ifndef CRAWLER_PAGELOADER_HPP
-#define CRAWLER_PAGELOADER_HPP
+#ifndef CRAWLER_PAGE_LOADER_HPP
+#define CRAWLER_PAGE_LOADER_HPP
 
 #include <string>
 #include <sstream>
@@ -15,4 +15,4 @@ public:
 	static Page load(const std::string& url);
 };
 
-#endif //CRAWLER_PAGELOADER_HPP
+#endif //CRAWLER_PAGE_LOADER_HPP

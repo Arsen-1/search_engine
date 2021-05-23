@@ -1,9 +1,9 @@
-//created by Arsen 
+//created by Arsen
 
 
 #include "Page.hpp"
 
-Page::Page(std::string effUrl, std::string data, long status)
-	:effUrl{ std::move(effUrl) }, data{ std::move(data) }, status{ status }
+Page::Page(std::string body, int status)
+	:data{ std::move(body) }, status{ status }
 {
 }

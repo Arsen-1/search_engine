@@ -5,26 +5,21 @@
 
 class Page {
 private:
-	std::string data;
-	std::string effUrl;
-	long status;
+	std::string body;
+	int status;
 
 public:
-	Page(std::string effUrl, std::string data, long status);
+	Page(std::string body, int status);
 
-	[[nodiscard]] inline const std::string& getEffUrl() const
+	const std::string& getBody() const
 	{
-		return this->effUrl;
-	}
-	[[nodiscard]] inline const std::string& getData() const
-	{
-		return this->data;
+		return this->body;
 	};
-	[[nodiscard]] inline long getStatus() const
+	int getStatus() const
 	{
 		return this->status;
 	}
-	[[nodiscard]] inline bool valid() const
+	bool valid() const
 	{
 		return this->status >= 200 && this->status < 300;
 	}

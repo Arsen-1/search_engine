@@ -23,11 +23,9 @@ Page PageLoader::load(const std::string& url)
 		request.setOpt(ws);
 		request.perform();
 
-		std::string effUrl;
-		// write found effective url into effective url
-		curlpp::infos::EffectiveUrl::get(request, effUrl);
 
-		return Page(effUrl, os.str(), curlpp::infos::ResponseCode::get(request));
+
+		return Page(os.str(), curlpp::infos::ResponseCode::get(request));
 	}
 	catch (const curlpp::LibcurlRuntimeError& error) {
 		std::cout << "thrown exception from 'page loader': " << error.what() << std::endl;
