@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Crawler",
+    "\\Crawler\\ConfigParser",
+    "\\Crawler\\PageLoader"
+  ],
+  "SelectedNode": "\\Crawler\\ConfigParser\\ConfigParser.hpp",
+  "PreviewInSolutionExplorer": false
+}
